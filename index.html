@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- easy -->
+
+<body>
+
+    <div class="main">
+        <img src="icon/maze.png" alt="" width="100px" height="100px">
+        <br><br>
+        <h2 style="text-align: center;">Guess the number game</h>
+            <br><br>
+            <h3>Choose Level</h3><br>
+            <select id="choose">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <br><br>
+            <button class="button1" onclick="fan()">Start</button>
+    </div>
+
+    <div id="hard">
+        <div class="last">
+            <img src="icon/party.gif" alt="" width="100px" height="100px">
+            <br><br>
+            <p class="cr"></p>
+            <p id="kk"></p>
+            <br><br>
+            <button type="submit" onclick="restart()" class="restart" style="display: block;">restart</button>
+
+        </div>
+
+        <img src="icon/back.png" alt="back1" onclick="back1()" class="back1">
+        <h2 class="h2">Guess the number 1 - 100 </h2>
+        <div style="display: flex; align-items: center; justify-content:space-evenly;gap: 2em; ">
+            <h3>Level: Hard</h3>
+
+            <h2 class="cuonttime">
+                </h>
+        </div>
+        <p id="mmn"></p>
+        <div class="sub">
+            <input type="number" id="inpu" max="100" min="0">
+            <button type="submit" id="btn" onclick="main()">Guess</button>
+        </div>
+        <div class="low">
+            <input type="checkbox" id="mycheckbox" style="display: none;">
+            <label for="">hint</label>
+        </div>
+
+        <p id="hint" style="display: none;"></p>
+        <div class="arrall" style="display: flex;">
+            <label for="">Attempts:</label>
+            <textarea name="" id="arrtime" rows="20"></textarea>
+        </div>
+        <div class="loss">
+            <img src="icon/cry.gif" alt="cry" width="100px" height="100px">
+            <br><br>
+            <h1>You're out of time!</h1><br><br>
+            <button type="submit" onclick="resta()" class="restart" style="display: block;">restart</button>
+
+
+        </div>
+    </div>
+
+    <div id="medium">
+        <div class="last1">
+            <img src="icon/party.gif" alt="" width="100px" height="100px">
+            <br><br>
+            <p class="cr1"></p>
+            <p id="kk1"></p>
+            <br><br>
+            <!-- <p class="bb1"></p> -->
+            <button type="submit" onclick="restart1()" class="restart1" style="display: block;">restart</button>
+
+        </div>
+        <img src="icon/back.png" alt="back1" onclick="back()" class="back1">
+        <h2 class="h2">Guess the number 1 - 50 </h2>
+        <h3>Level: Medium</h3>
+        <p id="mmn1"></p>
+        <div class="sub">
+            <input type="number" id="inpu1" max="50" min="0">
+            <button type="submit" id="btn1" onclick="main1()">Guess</button>
+        </div>
+        <div class="low1">
+            <input type="checkbox" id="mycheckbox1" style="display: none;">
+            <label for="">hint</label>
+        </div>
+
+        <p id="hint1" style="display: none;"></p>
+
+        <div class="arrall1" style="display: flex;">
+            <label for="">Attempts:</label>
+            <textarea name="" id="arrtime1" rows="20"></textarea>
+        </div>
+
+    </div>
+
+    <div id="easy">
+        <div class="last2">
+            <img src="icon/party.gif" alt="" width="100px" height="100px">
+            <br><br>
+            <p class="cr2"></p>
+            <p id="kk2"></p>
+            <br><br>
+            <!-- <p class="bb2"></p> -->
+            <button type="submit" onclick="restart2()" class="restart2" style="display: block;">restart</button>
+
+        </div>
+        <img src="icon/back.png" alt="back1" onclick="back()" class="back1">
+        <h2 class="h2">Guess the number 1 - 10 </h2>
+
+        <h3>Level: Easy</h3>
+        <p id="mmn2"></p>
+        <div class="sub">
+            <input type="number" id="inpu2" max="10" min="0">
+            <button type="submit" id="btn2" onclick="main2()">Guess</button>
+        </div>
+        <div class="low2">
+            <input type="checkbox" id="mycheckbox2" style="display: none;">
+            <label for="">hint</label>
+        </div>
+        <p id="hint2" style="display: none;"></p>
+
+        <div class="arrall2" style="display: flex;">
+            <label for="">Attempts:</label>
+            <!-- <p id="arrtime2" aria-rowcount="10"></p> -->
+            <textarea name="" id="arrtime2" rows="20"></textarea>
+        </div>
+
+    </div>
+
+
+    <script src="js/hard.js"></script>
+    <script src="js/medium.js"></script>
+    <script src="js/easy.js"></script>
+
+</body>
+
+</html>
