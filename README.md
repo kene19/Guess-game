@@ -19,7 +19,7 @@ The Guess Game is a number-guessing game where players can choose between differ
 1. Open the <a href="https://kene19.github.io/Guess-game/">guess game</a>  file in your web browser.
 2. Select the difficulty level (Easy, Medium, or Hard).
 3. Enter your guess in the input field.
-4. Click the "Submit" button to check your guess.
+4. Click the "guess" button to check your guess.
 5. The game will provide feedback whether your guess is too high, too low, or correct.
 6. Keep guessing until you find the correct number.
 7. Celebrate your victory with the provided animations!
