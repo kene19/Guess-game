@@ -12,6 +12,7 @@ let cuonttime = document.querySelector('.cuonttime');
 let loss = document.querySelector('.loss');
 let mainn = document.querySelector('.main');
 let easy = document.getElementById("easy");
+let outtime = document.getElementById("outtime");
 let medium = document.getElementById("medium");
 let hard = document.getElementById("hard");
 let guess = 0;
@@ -23,7 +24,7 @@ function back() {
    mainn.style.display = "flex";
    easy.style.display = "none";
    medium.style.display = "none";
-   
+
 }
 
 function fan() {
@@ -50,7 +51,7 @@ function fan() {
          medium.style.display = "none";
          hard.style.display = "flex";
          x = 61;
-         
+
          break;
       default:
          //   document.getElementById("err").innerHTML = "errr";
@@ -71,6 +72,8 @@ function start() {
       if (x === 0) {
          clearInterval(interval);
          loss.style.display = "flex";
+         outtime.textContent = `The number is ${ansewr}`; //lose the game
+         outtime.style.color = "#521818";
       }
       if (x === 10) {
          cuonttime.style.color = "red";
@@ -80,7 +83,7 @@ function start() {
 }
 
 
-function back1(){
+function back1() {
    mainn.style.display = "flex";
    hard.style.display = "none";
    clearInterval(interval);
@@ -126,11 +129,11 @@ mycheckbox.onclick = function () {
       if (ansewr > 50) {
 
          hint.innerHTML = `Above the number 50`;
-         
+
       }
       else {
          hint.innerHTML = `Below the number 50`;
-         
+
       }
    } else {
       hint.style.display = "none";
